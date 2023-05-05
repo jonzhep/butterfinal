@@ -1,0 +1,23 @@
+---
+import ContentSection from "~/components/content-section.astro";
+import ShowcaseCard from "~/components/showcase-card.astro";
+import { getShowcase } from "~/data/showcase";
+
+const sites = await getShowcase();
+---
+
+<ContentSection title="Memes" id="showcase">
+  <Fragment slot="lead">
+    Join the<span class="text-primary">$BUTTER</span> meme train 🚆
+  </Fragment>
+  <div class="max-w-6xl space-y-2">
+    <!-- <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {sites.map((site) => <ShowcaseCard site={site} />)}
+    </div> -->
+    <p class="text-right text-sm">
+      <a class="text-primary" href="https://twitter.com/abuttertoken">
+        ...and more &rarr;
+      </a>
+    </p>
+  </div>
+</ContentSection>

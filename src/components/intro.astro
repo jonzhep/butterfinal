@@ -1,0 +1,16 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<ContentSection title="Welcome to $BUTTER" id="intro">
+  <!-- <Icon slot="eyebrow" name="logomark" class="h-32" /> -->
+  <img src="/src/assets/logo.png" slot="eyebrow" class="h-32" />
+  <Fragment slot="lead">
+    $BUTTER is a meme token created by
+    <span class="text-primary">lobsterdao</span> a community of crypto enthusiasts who love lobsters and butter.
+    <span class="text-primary">$BUTTER</span> is a delicious and fun way to participate in the decentralized economy and support lobster conservation.
+  
+  </Fragment>
+  
+</ContentSection>

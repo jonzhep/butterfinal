@@ -1,0 +1,66 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+import type { FeatureItem } from "~/types";
+
+const features: Array<FeatureItem> = [
+  {
+    title: "BUTTER is yummy and creamy",
+    description:
+      "It goes well with any dish, especially lobsters. Who doesn’t love butter?",
+    icon: "src/assets/icons/c1.png",
+  },
+  {
+    title: "BUTTER is scarce and valuable",
+    description:
+      "There is a fixed supply of 10 million $BUTTER tokens, and no more can be minted. This means that $BUTTER will appreciate in value as demand increases.",
+    icon: "src/assets/icons/c2.png",
+  },
+  {
+    title: "BUTTER is community-driven and charitable",
+    description:
+      "$BUTTER holders can vote on important decisions regarding the project, such as marketing, partnerships, and donations.",
+    icon: "src/assets/icons/c3.png",
+  },
+  {
+    title: "BUTTER is fun and rewarding",
+    description:
+      "$BUTTER holders can enjoy exclusive benefits, such as access to lobster-themed NFTs, merch, games, and events.",
+    icon: "src/assets/icons/c4.png",
+  },
+  {
+    title: "BUTTER is meme-worthy and viral",
+    description:
+      "$BUTTER has a catchy name and a cute logo that can easily spread on social media and attract new investors. $BUTTER also has a loyal and active fan base that creates and shares amazing content about lobsters and butter.",
+    icon: "src/assets/icons/c5.png",
+  },
+  {
+    title: "BUTTER is sustainable and eco-friendly",
+    description:
+      "$BUTTER also supports the preservation and restoration of lobster habitats and ecosystems.",
+    icon: "src/assets/icons/c6.png",
+  },
+];
+---
+
+<ContentSection title="Why $BUTTER?" id="features">
+  <Fragment slot="lead">
+    <span class="text-primary">$BUTTER</span> is not just a meme token, it’s a lifestyle. Here are some reasons why you should join the <span class="text-primary">$BUTTER</span> gang:
+    
+    
+  </Fragment>
+  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {
+      features.map(({ title, description, icon }) => (
+        <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
+          <div class="h-20 w-20 rounded-full   p-3">
+            
+            <img src={icon} alt={title} />
+          </div>
+          <p class="text-center font-extrabold text-xl">{title}</p>
+          <p class="text-center text-offset text-sm">{description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</ContentSection>

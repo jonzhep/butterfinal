@@ -25,6 +25,7 @@
     "tailwindcss-fluid-type": "^2.0.3"
   },
   "dependencies": {
+    "@1inch/embedded-widget": "^0.0.2",
     "@astrojs/partytown": "^1.2.1",
     "@fontsource/inter": "^4.5.15",
     "micromodal": "^0.4.10",

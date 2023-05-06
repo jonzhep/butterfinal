@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Comic Neue', 'ui-sans-serif', 'system-ui'],
+        sans: ['Grandstander', 'ui-sans-serif', 'system-ui'],
       },
       colors: {
         primary: "var(--color-primary)",

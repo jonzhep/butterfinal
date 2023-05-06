@@ -2,6 +2,7 @@
 import CompatibilityList from "~/components/compatibility-list.astro";
 import ContentSection from "~/components/content-section.astro";
 import type { CompatibilityItem } from "~/types";
+import {setup1inchWidget} from '@1inch/embedded-widget';
 
 const frameworks: Array<CompatibilityItem> = [
   {
@@ -70,10 +71,12 @@ const platforms: Array<CompatibilityItem> = [
 ];
 ---
 
-<ContentSection title="How to buy $BUTTER?" id="compatibility">
+<ContentSection title="How to buy BUTTER?" id="compatibility">
   <Fragment slot="lead">
-    <span class="text-primary">$BUTTER</span> is available on Uniswap, the most popular decentralized exchange on Ethereum.<br>To buy $BUTTER, you need to have some ETH in your wallet and follow these simple steps:
+    <span class="text-primary">BUTTER</span> is available on Uniswap.<br>To buy <span class="text-primary">BUTTER</span>, you need to have some ETH in your wallet and follow these simple steps:
   </Fragment>
+
+  
   <iframe
   src="https://app.uniswap.org/#/swap?exactField=input&exactAmount=10&inputCurrency=0x6b175474e89094c44da98b954eedeac495271d0f"
   height="660px"
@@ -89,3 +92,5 @@ const platforms: Array<CompatibilityItem> = [
   "
 />
 </ContentSection>
+
+

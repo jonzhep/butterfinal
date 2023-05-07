@@ -1827,6 +1827,11 @@ csso@^4.2.0:
   dependencies:
     css-tree "^1.1.2"
 
+cursor-effects@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/cursor-effects/-/cursor-effects-1.0.11.tgz#6497551049cb0a89b13d878b5eefc38611d77587"
+  integrity sha512-P+nV/8Bfxk6RQvsg2uq7wW+WncJLBx8bmqT80QU1nlW15qSb5fpaCLfZ9nl2BZSRyz+u+sxKhAESPNoAkAfJmw==
+
 d@1, d@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/d/-/d-1.0.1.tgz#8698095372d58dbee346ffd0c7093f99f8f9eb5a"

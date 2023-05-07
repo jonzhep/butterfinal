@@ -9,6 +9,9 @@ import Showcase from "~/components/showcase.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 
+
+
+
 const { generator, site } = Astro;
 const image = new URL("/assets/social.jpg", site);
 const description =
@@ -18,9 +21,16 @@ const description =
 <!DOCTYPE html>
 <html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="light">
   <head>
+    <script type="module">
+      import { emojiCursor } from "/assets/emoji.js";
+    
+      window.addEventListener("DOMContentLoaded", () => {
+        new emojiCursor({ emoji: ["🧈","🦞","🧈"]}); // Change 32 to the size you want in pixels
+});
+    </script>
     <script
   type="text/partytown"
-  src="https://www.googletagmanager.com/gtag/js?id=G-FMVPGPPB01">
+  src="https://www.googletagmanager.com/gtag/js?id=G-ORYK23P1FL">
 </script>
 <script type="text/partytown">
   window.dataLayer = window.dataLayer || [];

@@ -6,15 +6,26 @@ import type { FooterLink } from "~/types";
 const links: Array<FooterLink> = [
   
   {
-    url: "https://t.me/buttercoineth",
-    description: "BUTTER on Telegram",
+    url: "https://t.me/buttercoinethportal",
+    description: "Telegram",
     icon: "fa-brands:telegram",
   },
   {
     url: "https://twitter.com/buttercoineth",
-    description: "BUTTER on Twitter",
+    description: "Twitter",
     icon: "fa-brands:twitter",
   },
+  {
+    url: "https://www.dextools.io",
+    description: "DEXTools",
+    icon: "fa-brands:twitter",
+  },
+  {
+    url: "https://www.coinmarketcap.com",
+    description: "Coinmarketcap",
+    icon: "fa-brands:twitter",
+  },
+  
 ];
 ---
 
@@ -22,16 +33,16 @@ const links: Array<FooterLink> = [
   <div class="absolute inset-0 overflow-hidden opacity-40">
     <HeroImage />
   </div>
-  <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
+  <ul class="relative grid grid-cols-2 gap-8 sm:grid-cols-4 ">
     {
       links.map((link) => (
         <li>
           <a
-            class="flex h-16 w-16 items-center justify-center rounded-full border-2 border-current p-4"
+            class="flex h-12 shadow-lg font-bold w-auto items-center justify-center bg-yellow-300 hover:bg-yellow-900 p-4" // Modified width from 16 to 24
             href={link.url}
           >
             <span class="sr-only">{link.description}</span>
-            <Icon class="h-full" name={link.icon} />
+            <span>{link.description}</span>
           </a>
         </li>
       ))

@@ -30,6 +30,11 @@ const links: Array<FooterLink> = [
     description: "CoinMarketCap",
     icon: "fa-brands:twitter",
   },
+  {
+    url: "https://www.coingecko.com/en/coins/butter",
+    description: "CoinGecko",
+    icon: "fa-brands:twitter",
+  },
   
 ];
 ---
@@ -38,12 +43,12 @@ const links: Array<FooterLink> = [
   <div class="absolute inset-0 overflow-hidden opacity-40">
     <HeroImage />
   </div>
-  <ul class="relative grid grid-cols-2 gap-8 sm:grid-cols-5 ">
+  <ul class="relative grid grid-cols-2 gap-8 sm:grid-cols-6 ">
     {
       links.map((link) => (
         <li>
           <a
-  class="flex h-12 shadow-lg font-bold w-auto items-center justify-center bg-yellow-300 hover:bg-yellow-900 p-4"
+          class="flex h-12 shadow-lg font-bold w-auto items-center justify-center bg-yellow-300 hover:bg-yellow-900 px-1 py-4"
   href={link.url}
   target="_blank"
   rel="noopener noreferrer"
